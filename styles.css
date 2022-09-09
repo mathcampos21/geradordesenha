@@ -41,6 +41,21 @@ body {
     margin-top: 8px;
 }
 
+.container-checkbox{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.input-padrao, .label-padrao{
+    cursor: pointer;
+    margin: 4px;
+}
+
+
 .button-cta{
     height: 40px;
     background-color: #3eb72b;
@@ -79,6 +94,7 @@ body {
     align-items: center;
     color: #FFFFFF;
     transition: transform 0.5s;
+    font-size: 15px;
 }
 
 .password:hover{

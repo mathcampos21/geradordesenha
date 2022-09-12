@@ -36,7 +36,9 @@ slider.oninput = function(){
 function generatepassword(){
 
     let pass = "";
-    let charset
+    let charset = 0;
+
+    console.log(charset)
 
     if (checkboxMinuscula.checked) {
         charset += minuscula
@@ -61,6 +63,8 @@ function generatepassword(){
     } else {
         charset -= simbolos
     }
+
+    console.log(charset)
 
 
     for (let i = 0, n = charset.length; i < sliderElement.value; ++i){

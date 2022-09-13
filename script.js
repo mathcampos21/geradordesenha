@@ -14,18 +14,9 @@ let checkboxSimbolo = document.querySelector("#input-simbolos");
 
 let button = document.querySelector("#button")
 
-
-
 let Selecionados = 0;
 
-let minuscula = "abcdefghijklmnopqrstuvwxyz";
-let maiuscula = "ABCDEFGJIJKLMNOPQRSTUVWXYZ";
-let simbolos = "!@#$%&*";
-let numeros = "0123456789";
-
-
 let novaSenha = "";
-
 
 sizePassword.innerHTML = sliderElement.value;
 
@@ -36,32 +27,34 @@ slider.oninput = function(){
 function generatepassword(){
 
     let pass = "";
-    let charset = 0;
-
-    console.log(charset)
+    let charset = "";
+    let minuscula = "abcdefghijklmnopqrstuvwxyz";
+    let maiuscula = "ABCDEFGJIJKLMNOPQRSTUVWXYZ";
+    let simbolos = "!@#$%&*";
+    let numeros = "0123456789";
 
     if (checkboxMinuscula.checked) {
-        charset += minuscula
+        charset += minuscula;
     } else {
-        charset -= minuscula
+        minuscula = "";
     }
 
     if (checkboxMaiuscula.checked) {
-        charset += maiuscula
+        charset += maiuscula;
     } else {
-        charset -= maiuscula
+        maiuscula = "";
     }
 
     if (checkboxNumero.checked) {
-        charset += numeros
+        charset += numeros;
     } else {
-        charset -= numeros
+        numeros = "";
     }
 
     if (checkboxSimbolo.checked) {
-        charset += simbolos
+        charset += simbolos;
     } else {
-        charset -= simbolos
+        simbolos = "";
     }
 
     console.log(charset)

@@ -57,7 +57,7 @@ function generatepassword(){
         simbolos = "";
     }
 
-    console.log(charset)
+    // console.log(charset)
 
 
     for (let i = 0, n = charset.length; i < sliderElement.value; ++i){

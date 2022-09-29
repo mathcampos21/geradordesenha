@@ -25,7 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 3px solid #3eb72b;
+    border: 3px solid #005cc8;
     border-radius: 20px;
     padding: 30px 40px;
     width: 40%;
@@ -67,9 +67,6 @@ body {
     color: #FFFFFF;
 }
 
-.input-padrao{
-    
-}
 
 .input-padrao, .label-padrao{
     cursor: pointer;
@@ -79,7 +76,7 @@ body {
 
 .button-cta{
     height: 40px;
-    background-color: #3eb72b;
+    background-color: #005cc8;
     border: 0;
     border-radius: 5px;
     cursor: pointer;
@@ -123,11 +120,12 @@ body {
 }
 
 .tooltip {
-    color: #FFFFFF;
+    color: #ffffff;
+    font-weight: bold;
     position: relative;
     top: 20px;
     padding: 6px 8px;
-    background: rgb(15,15,15);
+    background: rgb(58, 58, 58);
     text-align: center;
     font-size: 16px;
     border-radius: 5px;
